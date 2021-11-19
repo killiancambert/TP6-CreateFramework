@@ -7,7 +7,7 @@
         },
         "2": {
             "filter": "capitalize",
-            "params": [],
+            "params": ["123"],
             "next": "3"
         },
         "3": {

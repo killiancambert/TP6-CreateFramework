@@ -71,7 +71,6 @@ function executeModule(map, nextExecKey, param) {
     //Premier appel
     if (!nextExecKey) {
         step = map.entries().next().value[1]
-        param = step.params[0];
     }
     //Appels suivants
     else
@@ -81,10 +80,11 @@ function executeModule(map, nextExecKey, param) {
         console.log(`Exécution du filter ${step.filter}.js`);
 
         const exec = require(`${filterFolder}/${step.filter}.js`)
-        console.log(exec.length)
-
-        const values = step.params.values();
-        res = exec(param, values.next().value);
+        let values = [];
+        if (param)
+            values.push(param);
+        values.push(...step.params.values());
+        res = exec(...values);
 
     } catch (error) {
         throw (`Exécution du filter ${step.filter}.js échoué : ${error}`);
