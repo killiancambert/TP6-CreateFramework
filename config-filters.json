@@ -2,7 +2,7 @@
     "steps": {
         "1": {
             "filter": "read",
-            "params": ["C:\\Users\\leska\\Documents\\ArchiLogiciel\\TP6-CreateFramework\\start.txt"],
+            "params": ["start.txt"],
             "next":"2"
         },
         "2": {
@@ -17,7 +17,7 @@
         },
         "4": {
             "filter": "write",
-            "params": ["C:\\Users\\leska\\Documents\\ArchiLogiciel\\TP6-CreateFramework\\end.txt","0"]
+            "params": ["end.txt"]
         }
     }
 }
