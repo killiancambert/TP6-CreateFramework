@@ -1,23 +1,23 @@
 {
-    "steps" : {
-    "1": {
-    "filter": "read",
-    "params" : [],
-    "next": "2"
-    },
-    "2": {
-    "filter": "capitalize",
-    "params" : [],
-    "next": "3"
-    },
-    "3": {
-    "filter": "reverse",
-    "params" : [],
-    "next": "4"
-    },
-    "4": {
-    "filter": "write",
-    "params" : []
+    "steps": {
+        "1": {
+            "filter": "read",
+            "params": [],
+            "next": "2"
+        },
+        "2": {
+            "filter": "capitalize",
+            "params": [],
+            "next": "3"
+        },
+        "3": {
+            "filter": "reverse",
+            "params": [],
+            "next": "4"
+        },
+        "4": {
+            "filter": "write",
+            "params": []
+        }
     }
-}
 }

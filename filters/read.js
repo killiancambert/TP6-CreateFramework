@@ -1,0 +1,1 @@
+module.exports = (input) => {console.log('test read');}
