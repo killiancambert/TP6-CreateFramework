@@ -2,8 +2,8 @@
     "steps": {
         "1": {
             "filter": "read",
-            "params": [],
-            "next": "2"
+            "params": ["C:\\Users\\leska\\Documents\\ArchiLogiciel\\TP6-CreateFramework\\start.txt"],
+            "next":"2"
         },
         "2": {
             "filter": "capitalize",
@@ -17,7 +17,7 @@
         },
         "4": {
             "filter": "write",
-            "params": []
+            "params": ["C:\\Users\\leska\\Documents\\ArchiLogiciel\\TP6-CreateFramework\\end.txt","0"]
         }
     }
 }
